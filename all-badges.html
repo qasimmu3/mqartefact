@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>All Badges - Web App MVP</title>
+    <meta name='robots' content='noindex, nofollow' />
+
+    <style id='wp-emoji-styles-inline-css'>
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style id='classic-theme-styles-inline-css'>
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em
+      }
+
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none
+      }
+    </style>
+    <style id='global-styles-inline-css'>
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+
+      body .is-layout-flex {
+        display: flex;
+      }
+
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .is-layout-flex> :is(*, div) {
+        margin: 0;
+      }
+
+      body .is-layout-grid {
+        display: grid;
+      }
+
+      .is-layout-grid> :is(*, div) {
+        margin: 0;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+
+      :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel='stylesheet' id='tutor-prism-css-css' href='./css/tutor-pro-assets-lib-codesample-prism.css' media='all' />
+    <link rel='stylesheet' id='tutor-pro-front-css' href='./css/tutor-pro-assets-css-front.css' media='all' />
+    <link rel='stylesheet' id='tutor-icon-css' href='./css/tutor-assets-css-tutor-icon.min.css' media='all' />
+    <link rel='stylesheet' id='tutor-css' href='./css/tutor-assets-css-tutor.min.css' media='all' />
+    <link rel='stylesheet' id='tutor-frontend-css' href='./css/tutor-assets-css-tutor-front.min.css' media='all' />
+    <style id='tutor-frontend-inline-css'>
+      .mce-notification.mce-notification-error {
+        display: none !important;
+      }
+
+      :root {
+        --tutor-color-primary: #3E64DE;
+        --tutor-color-primary-rgb: 62, 100, 222;
+        --tutor-color-primary-hover: #395BCA;
+        --tutor-color-primary-hover-rgb: 57, 91, 202;
+        --tutor-body-color: #212327;
+        --tutor-body-color-rgb: 33, 35, 39;
+        --tutor-border-color: #E3E5EB;
+        --tutor-border-color-rgb: 227, 229, 235;
+        --tutor-color-gray: #CDCFD5;
+        --tutor-color-gray-rgb: 205, 207, 213;
+      }
+    </style>
+    <link rel='stylesheet' id='hello-elementor-css' href='./css/hello-elementor-style.min.css' media='all' />
+    <link rel='stylesheet' id='hello-elementor-theme-style-css' href='./css/hello-elementor-theme.min.css' media='all' />
+    <link rel='stylesheet' id='hello-elementor-header-footer-css' href='./css/hello-elementor-header-footer.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='./css/elementor-assets-css-frontend-lite.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-post-11-css' href='./css/elementor-css-post-11.css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-ekiticons-css' href='./css/elementskit-lite-modules-elementskit-icon-pack-assets-css-ekiticons.css' media='all' />
+    <link rel='stylesheet' id='elementskit-parallax-style-css' href='./css/elementskit-modules-parallax-assets-css-style.css' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='./css/elementor-assets-lib-swiper-v8-css-swiper.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-pro-css' href='./css/elementor-pro-assets-css-frontend-lite.min.css' media='all' />
+    <link rel='stylesheet' id='cotton-css' href='./css/elementskit-modules-mouse-cursor-assets-css-style.css' media='all' />
+    <link rel='stylesheet' id='elementor-global-css' href='./css/elementor-css-global.css' media='all' />
+    <link rel='stylesheet' id='elementor-post-220-css' href='./css/elementor-css-post-220.css' media='all' />
+    <link rel='stylesheet' id='ekit-widget-styles-css' href='./css/elementskit-lite-widgets-init-assets-css-widget-styles.css' media='all' />
+    <link rel='stylesheet' id='ekit-widget-styles-pro-css' href='./css/elementskit-widgets-init-assets-css-widget-styles-pro.css' media='all' />
+    <link rel='stylesheet' id='ekit-responsive-css' href='./css/elementskit-lite-widgets-init-assets-css-responsive.css' media='all' />
+    <link rel='stylesheet' id='font-awesome-4-shim-css' href='./css/tutor-lms-elementor-addons-assets-css-font-awesome.min.css' media='all' />
+    <link rel='stylesheet' id='slick-css-css' href='./css/tutor-lms-elementor-addons-assets-css-slick.min.css' media='all' />
+    <link rel='stylesheet' id='slick-theme-css-css' href='./css/tutor-lms-elementor-addons-assets-css-slick-theme.css' media='all' />
+    <link rel='stylesheet' id='tutor-elementor-css-css' href='./css/tutor-lms-elementor-addons-assets-css-tutor-elementor.min.css' media='all' />
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.6.1' media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <script src="./js/jquery-jquery.min.js" id="jquery-core-js"></script>
+    <script src="./js/jquery-jquery-migrate.min.js" id="jquery-migrate-js"></script>
+    <script src="./js/elementskit-modules-parallax-assets-js-jarallax.js" id="jarallax-js"></script>
+    <script src="./js/tutor-lms-elementor-addons-assets-js-slick.min.js" id="etlms-slick-library-js"></script>
+    <script id="tutor-elementor-js-js-extra">
+      var tutorElementorData = {
+        "is_sidebar_sticky": ""
+      };
+    </script>
+    <script id="tutor-elementor-js-js-before">
+      const etlmsUtility = {
+        "is_editor_mode": false
+      }
+    </script>
+    <script src="./js/tutor-lms-elementor-addons-assets-js-tutor-elementor.js" id="tutor-elementor-js-js"></script>
+
+    <style>
+      .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+
+      @media screen and (max-height: 1024px) {
+
+        .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+          background-image: none !important;
+        }
+      }
+
+      @media screen and (max-height: 640px) {
+
+        .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+          background-image: none !important;
+        }
+      }
+    </style>
+    <style id="wp-custom-css">
+      .elementor-52 .elementor-element.elementor-element-1f1f9ea .elementor-field-group {
+        margin-top: 50px;
+      }
+
+      .elementor-element-1f1f9ea .elementor-field-label {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+
+      .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group .elementor-field-subgroup,
+      .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group>.elementor-select-wrapper,
+      .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group>input,
+      .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group>textarea {
+        text-align: center !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+      }
+      .elementor-widget .elementor-icon-list-icon {
+    display: flex;
+    position: relative;
+    top: 0px;
+}
+.elementor-element-9e72d77 .elementor-icon-list-icon svg {
+    fill: #FF0000;
+    transition: fill 0.3s;
+}
+.elementor-342 .elementor-element.elementor-element-389af21 .elementor-icon-list-icon svg {
+    fill: #FF0000;
+    transition: fill 0.3s;
+}
+.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon svg {
+    margin: var(--e-icon-list-icon-margin, 0 calc(14px, 1em)* .25) 0 0);
+}
+.elementor-element-9e72d77 .elementor-icon-list-text {
+    color: #101010;
+    transition: color 0.3s;
+}
+.elementor-widget .elementor-icon-list-icon+.elementor-icon-list-text {
+    align-self: center;
+    padding-inline-start: 5px;
+}
+.elementor-section .elementor-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.elementor-342 .elementor-element.elementor-element-f4aceab {
+    padding: 2vw 4vw 0vw 4vw;
+    overflow: visible;
+}
+.elementor-342 .elementor-element.elementor-element-90d94df.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated {
+    align-content: center;
+    align-items: center;
+}
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 10px;
+}
+.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+    display: flex;
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  </head>
+  <body class="page-template page-template-elementor_canvas page page-id-220 elementor-342  tutor-lms elementor-default elementor-template-canvas elementor-kit-11 elementor-page elementor-page-220">
+    <div data-elementor-type="wp-page" data-elementor-id="220" class="elementor elementor-220" data-elementor-post-type="page">
+   <section class="elementor-section elementor-top-section elementor-element elementor-element-f4aceab elementor-section-full_width elementor-section-height-default elementor-section-height-default elementskit-parallax-multi-container" data-id="f4aceab" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-90d94df" data-id="90d94df" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-ce31db5 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="ce31db5" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.23.0 - 05-08-2024 */
+                    .elementor-widget-image {
+                      text-align: center
+                    }
+
+                    .elementor-widget-image a {
+                      display: inline-block
+                    }
+
+                    .elementor-widget-image a img[src$=".svg"] {
+                      width: 48px
+                    }
+
+                    .elementor-widget-image img {
+                      vertical-align: middle;
+                      display: inline-block
+                    }
+                  </div>
+              </div>
+              <div class="elementor-element elementor-element-de68610 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="de68610" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.23.0 - 05-08-2024 */
+                    .elementor-heading-title {
+                      padding: 0;
+                      margin: 0;
+                      line-height: 1
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+                      color: inherit;
+                      font-size: inherit;
+                      line-height: inherit
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                      font-size: 15px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                      font-size: 19px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                      font-size: 29px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                      font-size: 39px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                      font-size: 59px
+                    }
+                  </style>
+                  <h2 class="elementor-heading-title elementor-size-default" style="text-align:left">All Badges</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8c437b3" data-id="8c437b3" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-389af21 elementor-icon-list--layout-inline elementor-align-right elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="389af21" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="icon-list.default">
+                <div class="elementor-widget-container">
+                  <link rel="stylesheet" href="./css/elementor-assets-css-widget-icon-list.min.css">
+                  <ul class="elementor-icon-list-items elementor-inline-items">
+                    <li class="elementor-icon-list-item elementor-inline-item">
+                      <a href="dashboard-2.html">
+                        <span class="elementor-icon-list-icon">
+                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-left" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path>
+                          </svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Dashboard</span>
+                      </a>
+                    </li>
+                    <li class="elementor-icon-list-item elementor-inline-item">
+                      <a href="login.html">
+                        <span class="elementor-icon-list-icon">
+                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-power-off" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M400 54.1c63 45 104 118.6 104 201.9 0 136.8-110.8 247.7-247.5 248C120 504.3 8.2 393 8 256.4 7.9 173.1 48.9 99.3 111.8 54.2c11.7-8.3 28-4.8 35 7.7L162.6 90c5.9 10.5 3.1 23.8-6.6 31-41.5 30.8-68 79.6-68 134.9-.1 92.3 74.5 168.1 168 168.1 91.6 0 168.6-74.2 168-169.1-.3-51.8-24.7-101.8-68.1-134-9.7-7.2-12.4-20.5-6.5-30.9l15.8-28.1c7-12.4 23.2-16.1 34.8-7.8zM296 264V24c0-13.3-10.7-24-24-24h-32c-13.3 0-24 10.7-24 24v240c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24z"></path>
+                          </svg>
+                        </span>
+                        <span class="elementor-icon-list-text">Logout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     <section class="elementor-section elementor-top-section elementor-element elementor-element-9a8f0dd elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="9a8f0dd" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bb36ea9" data-id="bb36ea9" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                
+              <section class="elementor-section elementor-inner-section elementor-element elementor-element-6c6e480 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="6c6e480" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+                <div class="elementor-container elementor-column-gap-default">
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-54ccce6" data-id="54ccce6" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-9e72d77 elementor-position-top elementor-widget elementor-widget-image-box" data-id="9e72d77" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                     
+                        <div class="elementor-widget-container">
+                          <style>
+                            /*! elementor - v3.23.0 - 05-08-2024 */
+                            .elementor-widget-image-box .elementor-image-box-content {
+                              width: 100%
+                            }
+
+                            @media (min-width:768px) {
+
+                              .elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,
+                              .elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper {
+                                display: flex
+                              }
+
+                              .elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper {
+                                text-align: end;
+                                flex-direction: row-reverse
+                              }
+
+                              .elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper {
+                                text-align: start;
+                                flex-direction: row
+                              }
+
+                              .elementor-widget-image-box.elementor-position-top .elementor-image-box-img {
+                                margin: auto
+                              }
+
+                              .elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper {
+                                align-items: flex-start
+                              }
+
+                              .elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper {
+                                align-items: center
+                              }
+
+                              .elementor-widget-image-box.elementor-vertical-align-bottom .elementor-image-box-wrapper {
+                                align-items: flex-end
+                              }
+                            }
+
+                            @media (max-width:767px) {
+                              .elementor-widget-image-box .elementor-image-box-img {
+                                margin-left: auto !important;
+                                margin-right: auto !important;
+                                margin-bottom: 15px
+                              }
+                            }
+
+                            .elementor-widget-image-box .elementor-image-box-img {
+                              display: inline-block
+                            }
+
+                            .elementor-widget-image-box .elementor-image-box-title a {
+                              color: inherit
+                            }
+
+                            .elementor-widget-image-box .elementor-image-box-wrapper {
+                              text-align: center
+                            }
+
+                            .elementor-widget-image-box .elementor-image-box-description {
+                              margin: 0
+                            }
+                          </style>
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Completed First Module Badge</h3>
+                              <p class="elementor-image-box-description">Earned by completing your first module</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-c02f9a7" data-id="c02f9a7" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-91bdfc2 elementor-position-top elementor-widget elementor-widget-image-box" data-id="91bdfc2" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Completed Ten Modules Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by completing ten modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-87fe79a" data-id="87fe79a" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-76eb4b6 elementor-position-top elementor-widget elementor-widget-image-box" data-id="76eb4b6" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Completed 50 Modules Badge</h3>
+                              <p class="elementor-image-box-description">Earned by completing 50 modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5c1e060" data-id="5c1e060" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-2771a8c elementor-position-top elementor-widget elementor-widget-image-box" data-id="2771a8c" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Completed Yearly Modules (2024)</h3>
+                              <p class="elementor-image-box-description">Earned by completing all assigned modules in 2024</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="elementor-section elementor-inner-section elementor-element elementor-element-be0d24e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="be0d24e" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+                <div class="elementor-container elementor-column-gap-default">
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2daa814" data-id="2daa814" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-5caea39 elementor-position-top elementor-widget elementor-widget-image-box" data-id="5caea39" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Phishing Awareness Amateur Badge</h3>
+                              <p class="elementor-image-box-description">Earned by passing 5 phishing and social engineering modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-de63015" data-id="de63015" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-1257732 elementor-position-top elementor-widget elementor-widget-image-box" data-id="1257732" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Phishing Awareness Pro Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 10 phishing and social engineering modules with all correct answers</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-35f0a9f" data-id="35f0a9f" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-2b25721 elementor-position-top elementor-widget elementor-widget-image-box" data-id="2b25721" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Password Management Amateur Badge</h3>
+                              <p class="elementor-image-box-description">Earned by passing 5 password management modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-6c169ee" data-id="6c169ee" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-6760324 elementor-position-top elementor-widget elementor-widget-image-box" data-id="6760324" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Password Management Pro Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 10 password management modules with all correct answers</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="elementor-section elementor-inner-section elementor-element elementor-element-af40647 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="af40647" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+                <div class="elementor-container elementor-column-gap-default">
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f5d2955" data-id="f5d2955" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-805a19b elementor-position-top elementor-widget elementor-widget-image-box" data-id="805a19b" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Data Protection Amateur Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 5 data protection and privacy modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2dd2f6b" data-id="2dd2f6b" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-cb9f10c elementor-position-top elementor-widget elementor-widget-image-box" data-id="cb9f10c" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Data Protection Pro Badge</h3>
+                              <p class="elementor-image-box-description">Earned by passing 10 data protection and privacy modules with all correct answers</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-90d604e" data-id="90d604e" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-b2b729d elementor-position-top elementor-widget elementor-widget-image-box" data-id="b2b729d" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Safe Browsing Amateur Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 5 safe internet and email usage modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-0adfd05" data-id="0adfd05" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-eb33cea elementor-position-top elementor-widget elementor-widget-image-box" data-id="eb33cea" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Safe Browsing Pro Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 10 safe internet and email usage modules with all correct answers</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="elementor-section elementor-inner-section elementor-element elementor-element-c42c43d elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c42c43d" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+                <div class="elementor-container elementor-column-gap-default">
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-45e29a8" data-id="45e29a8" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-5bbce3b elementor-position-top elementor-widget elementor-widget-image-box" data-id="5bbce3b" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Physical Security Awareness Amateur Badge</h3>
+                              <p class="elementor-image-box-description">Earned by passing 5 physical security modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-64f8d6f" data-id="64f8d6f" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-0fefd46 elementor-position-top elementor-widget elementor-widget-image-box" data-id="0fefd46" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Physical Security Awareness Pro Badge</h3>
+                              <p class="elementor-image-box-description">Earned by passing 10 physical security modules with all correct answers</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1cd594e" data-id="1cd594e" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-fbdc63d elementor-position-top elementor-widget elementor-widget-image-box" data-id="fbdc63d" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Mobile Security Amateur Badge</h3>
+                              <p class="elementor-image-box-description">Earned by passing 5 mobile device security modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8cda20d" data-id="8cda20d" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-ae1e1bb elementor-position-top elementor-widget elementor-widget-image-box" data-id="ae1e1bb" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Mobile Security Pro Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 10 mobile device security modules with all correct answers</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="elementor-section elementor-inner-section elementor-element elementor-element-c084cd8 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c084cd8" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+                <div class="elementor-container elementor-column-gap-default">
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-345210b" data-id="345210b" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-272c4da elementor-position-top elementor-widget elementor-widget-image-box" data-id="272c4da" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Incident Response Amateur Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 5 incident reporting and response modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d946919" data-id="d946919" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-8f9192e elementor-position-top elementor-widget elementor-widget-image-box" data-id="8f9192e" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Incident Response Pro Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 10 incident reporting and response modules with all correct answers</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-eabfe17" data-id="eabfe17" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-76cf482 elementor-position-top elementor-widget elementor-widget-image-box" data-id="76cf482" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Social Media Security Amateur Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 5 social media and public information sharing modules</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d23e909" data-id="d23e909" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-4fa4dbd elementor-position-top elementor-widget elementor-widget-image-box" data-id="4fa4dbd" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-box.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-image-box-wrapper">
+                            <figure class="elementor-image-box-img"><img fetchpriority="high" decoding="async" width="512" height="512" src="./images/2024-09-premium-quality.png" class="attachment-full size-full wp-image-223" alt="" srcset="./images/2024-09-premium-quality.png 512w, ./images/2024-09-premium-quality-300x300.png 300w, ./images/2024-09-premium-quality-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+                            <div class="elementor-image-box-content">
+                              <h3 class="elementor-image-box-title">Social Media Security Pro Badge</h3>
+                              <p class="elementor-image-box-description"> Earned by passing 10 social media and public information sharing modules with all correct answers </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type='text/javascript'>
+      const lazyloadRunObserver = () => {
+        const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+        const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              let lazyloadBackground = entry.target;
+              if (lazyloadBackground) {
+                lazyloadBackground.classList.add('e-lazyloaded');
+              }
+              lazyloadBackgroundObserver.unobserve(entry.target);
+            }
+          });
+        }, {
+          rootMargin: '200px 0px 200px 0px'
+        });
+        lazyloadBackgrounds.forEach((lazyloadBackground) => {
+          lazyloadBackgroundObserver.observe(lazyloadBackground);
+        });
+      };
+      const events = ['DOMContentLoaded', 'elementor/lazyload/observe', ];
+      events.forEach((event) => {
+        document.addEventListener(event, lazyloadRunObserver);
+      });
+    </script>
+    <link rel='stylesheet' id='elementskit-reset-button-for-pro-form-css-css' href='./css/elementskit-modules-pro-form-reset-button-assets-css-elementskit-reset-button.css' media='all' />
+    <link rel='stylesheet' id='ekit-particles-css' href='./css/elementskit-modules-particles-assets-css-particles.css' media='all' />
+    <script src="./js/tutor-pro-assets-lib-prism-prism.min.js" id="tutor-prism-js-js"></script>
+    <script src="./js/tutor-pro-assets-lib-prism-script.js" id="tutor-prism-script-js"></script>
+    <script src="./js/dist-hooks.min.js" id="wp-hooks-js"></script>
+    <script src="./js/dist-i18n.min.js" id="wp-i18n-js"></script>
+    <script id="wp-i18n-js-after">
+      wp.i18n.setLocaleData({
+        'text direction\u0004ltr': ['ltr']
+      });
+    </script>
+    <script src="./js/tutor-pro-assets-js-front.js" id="tutor-pro-front-js"></script>
+
+    <script src="./js/tutor-assets-js-tutor.min.js" id="tutor-script-js"></script>
+
+    <script src="./js/92q-quicktags.min.js" id="quicktags-js"></script>
+    <script src="./js/jquery-ui-core.min.js" id="jquery-ui-core-js"></script>
+    <script src="./js/jquery-ui-mouse.min.js" id="jquery-ui-mouse-js"></script>
+    <script src="./js/jquery-ui-sortable.min.js" id="jquery-ui-sortable-js"></script>
+    <script src="./js/jquery-jquery.ui.touch-punch.js" id="jquery-touch-punch-js"></script>
+    <script src="./js/tutor-assets-packages-SocialShare-SocialShare.min.js" id="tutor-social-share-js"></script>
+
+    <script src="./js/tutor-assets-js-tutor-front.min.js" id="tutor-frontend-js"></script>
+    <script src="./js/jquery-ui-datepicker.min.js" id="jquery-ui-datepicker-js"></script>
+    <script id="jquery-ui-datepicker-js-after">
+      jQuery(function(jQuery) {
+        jQuery.datepicker.setDefaults({
+          "closeText": "Close",
+          "currentText": "Today",
+          "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+          "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          "nextText": "Next",
+          "prevText": "Previous",
+          "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+          "dateFormat": "MM d, yy",
+          "firstDay": 1,
+          "isRTL": false
+        });
+      });
+    </script>
+    <script src="./js/hello-elementor-assets-js-hello-frontend.min.js" id="hello-theme-frontend-js"></script>
+    <script src="./js/elementskit-lite-libs-framework-assets-js-frontend-script.js" id="elementskit-framework-js-frontend-js"></script>
+
+    <script src="./js/elementskit-lite-widgets-init-assets-js-widget-scripts.js" id="ekit-widget-scripts-js"></script>
+    <script src="./js/elementskit-modules-parallax-assets-js-anime.js" id="animejs-js"></script>
+    <script defer src="./js/elementskit-modules-parallax-assets-js-parallax-frontend.js" id="elementskit-parallax-frontend-defer-js"></script>
+    <script src="./js/elementor-pro-assets-js-webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+    <script src="./js/elementor-assets-js-webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+    <script src="./js/elementor-assets-js-frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+    <script id="elementor-pro-frontend-js-before">
+      var ElementorProFrontendConfig = {
+        "ajaxurl": "https:\/\/dotclick.dev\/wp-admin\/admin-ajax.php",
+        "nonce": "0247fdfb84",
+        "urls": {
+          "assets": "https:\/\/dotclick.dev\/wp-content\/plugins\/elementor-pro\/assets\/",
+          "rest": "https:\/\/dotclick.dev\/wp-json\/"
+        },
+        "shareButtonsNetworks": {
+          "facebook": {
+            "title": "Facebook",
+            "has_counter": true
+          },
+          "twitter": {
+            "title": "Twitter"
+          },
+          "linkedin": {
+            "title": "LinkedIn",
+            "has_counter": true
+          },
+          "pinterest": {
+            "title": "Pinterest",
+            "has_counter": true
+          },
+          "reddit": {
+            "title": "Reddit",
+            "has_counter": true
+          },
+          "vk": {
+            "title": "VK",
+            "has_counter": true
+          },
+          "odnoklassniki": {
+            "title": "OK",
+            "has_counter": true
+          },
+          "tumblr": {
+            "title": "Tumblr"
+          },
+          "digg": {
+            "title": "Digg"
+          },
+          "skype": {
+            "title": "Skype"
+          },
+          "stumbleupon": {
+            "title": "StumbleUpon",
+            "has_counter": true
+          },
+          "mix": {
+            "title": "Mix"
+          },
+          "telegram": {
+            "title": "Telegram"
+          },
+          "pocket": {
+            "title": "Pocket",
+            "has_counter": true
+          },
+          "xing": {
+            "title": "XING",
+            "has_counter": true
+          },
+          "whatsapp": {
+            "title": "WhatsApp"
+          },
+          "email": {
+            "title": "Email"
+          },
+          "print": {
+            "title": "Print"
+          },
+          "x-twitter": {
+            "title": "X"
+          },
+          "threads": {
+            "title": "Threads"
+          }
+        },
+        "facebook_sdk": {
+          "lang": "en_US",
+          "app_id": ""
+        },
+        "lottie": {
+          "defaultAnimationUrl": "https:\/\/dotclick.dev\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+        }
+      };
+    </script>
+    <script src="./js/elementor-pro-assets-js-frontend.min.js" id="elementor-pro-frontend-js"></script>
+    <script src="./js/elementor-assets-lib-waypoints-waypoints.min.js" id="elementor-waypoints-js"></script>
+    <script id="elementor-frontend-js-before">
+      var elementorFrontendConfig = {
+        "environmentMode": {
+          "edit": false,
+          "wpPreview": false,
+          "isScriptDebug": false
+        },
+        "i18n": {
+          "shareOnFacebook": "Share on Facebook",
+          "shareOnTwitter": "Share on Twitter",
+          "pinIt": "Pin it",
+          "download": "Download",
+          "downloadImage": "Download image",
+          "fullscreen": "Fullscreen",
+          "zoom": "Zoom",
+          "share": "Share",
+          "playVideo": "Play Video",
+          "previous": "Previous",
+          "next": "Next",
+          "close": "Close",
+          "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+          "a11yCarouselPrevSlideMessage": "Previous slide",
+          "a11yCarouselNextSlideMessage": "Next slide",
+          "a11yCarouselFirstSlideMessage": "This is the first slide",
+          "a11yCarouselLastSlideMessage": "This is the last slide",
+          "a11yCarouselPaginationBulletMessage": "Go to slide"
+        },
+        "is_rtl": false,
+        "breakpoints": {
+          "xs": 0,
+          "sm": 480,
+          "md": 768,
+          "lg": 1025,
+          "xl": 1440,
+          "xxl": 1600
+        },
+        "responsive": {
+          "breakpoints": {
+            "mobile": {
+              "label": "Mobile Portrait",
+              "value": 767,
+              "default_value": 767,
+              "direction": "max",
+              "is_enabled": true
+            },
+            "mobile_extra": {
+              "label": "Mobile Landscape",
+              "value": 880,
+              "default_value": 880,
+              "direction": "max",
+              "is_enabled": false
+            },
+            "tablet": {
+              "label": "Tablet Portrait",
+              "value": 1024,
+              "default_value": 1024,
+              "direction": "max",
+              "is_enabled": true
+            },
+            "tablet_extra": {
+              "label": "Tablet Landscape",
+              "value": 1200,
+              "default_value": 1200,
+              "direction": "max",
+              "is_enabled": false
+            },
+            "laptop": {
+              "label": "Laptop",
+              "value": 1366,
+              "default_value": 1366,
+              "direction": "max",
+              "is_enabled": false
+            },
+            "widescreen": {
+              "label": "Widescreen",
+              "value": 2400,
+              "default_value": 2400,
+              "direction": "min",
+              "is_enabled": false
+            }
+          }
+        },
+        "version": "3.23.4",
+        "is_static": false,
+        "experimentalFeatures": {
+          "e_optimized_css_loading": true,
+          "e_font_icon_svg": true,
+          "additional_custom_breakpoints": true,
+          "e_swiper_latest": true,
+          "e_nested_atomic_repeaters": true,
+          "e_optimized_control_loading": true,
+          "e_onboarding": true,
+          "theme_builder_v2": true,
+          "hello-theme-header-footer": true,
+          "home_screen": true,
+          "editor_v2": true,
+          "e_lazyload": true,
+          "e_element_cache": true,
+          "link-in-bio": true,
+          "display-conditions": true,
+          "form-submissions": true,
+          "taxonomy-filter": true,
+          "search": true
+        },
+        "urls": {
+          "assets": "https:\/\/dotclick.dev\/wp-content\/plugins\/elementor\/assets\/",
+          "ajaxurl": "https:\/\/dotclick.dev\/wp-admin\/admin-ajax.php"
+        },
+        "nonces": {
+          "floatingButtonsClickTracking": "e91db052ca"
+        },
+        "swiperClass": "swiper",
+        "settings": {
+          "page": [],
+          "editorPreferences": []
+        },
+        "kit": {
+          "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+          "global_image_lightbox": "yes",
+          "lightbox_enable_counter": "yes",
+          "lightbox_enable_fullscreen": "yes",
+          "lightbox_enable_zoom": "yes",
+          "lightbox_enable_share": "yes",
+          "lightbox_title_src": "title",
+          "lightbox_description_src": "description",
+          "hello_header_logo_type": "title",
+          "hello_footer_logo_type": "logo"
+        },
+        "post": {
+          "id": 220,
+          "title": "All%20Badges%20%E2%80%93%20dotclick.dev",
+          "excerpt": "",
+          "featuredImage": false
+        }
+      };
+    </script>
+    <script src="./js/elementor-assets-js-frontend.min.js" id="elementor-frontend-js"></script>
+    <script src="./js/elementor-pro-assets-js-elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+    <script src="./js/elementskit-lite-widgets-init-assets-js-animate-circle.min.js" id="animate-circle-js"></script>
+
+    <script src="./js/elementskit-lite-widgets-init-assets-js-elementor.js" id="elementskit-elementor-js"></script>
+    <script src="./js/elementskit-widgets-init-assets-js-elementor.js" id="elementskit-elementor-pro-js"></script>
+    <script defer src="./js/elementskit-modules-sticky-content-assets-js-elementskit-sticky-content.js" id="elementskit-sticky-content-script-init-defer-js"></script>
+    <script src="./js/elementskit-modules-pro-form-reset-button-assets-js-elementskit-reset-button.js" id="elementskit-reset-button-js"></script>
+    <script src="./js/elementskit-modules-particles-assets-js-particles.min.js" id="particles-js"></script>
+    <script src="./js/elementskit-modules-particles-assets-js-ekit-particles.js" id="ekit-particles-js"></script>
+    <script defer src="./js/elementskit-modules-parallax-assets-js-parallax-admin.js" id="elementskit-parallax-admin-defer-js"></script>
+    <script src="./js/elementskit-modules-wrapper-link-assets-js-wrapper.js" id="elementskit-wrapper-js"></script>
+    <script src="./js/elementskit-modules-mouse-cursor-assets-js-cotton.min.js" id="cotton-js"></script>
+    <script src="./js/elementskit-modules-mouse-cursor-assets-js-mouse-cursor-scripts.js" id="mouse-cursor-js"></script>
+
+    <script data-name="wpr-wpr-beacon" src='./js/wp-rocket-assets-js-wpr-beacon.min.js' async></script>
+  </body>
+</html>

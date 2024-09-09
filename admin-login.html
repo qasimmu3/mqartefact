@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin - Login | Web App MVP</title>
+    <meta name='robots' content='noindex, nofollow' />
+
+    <style id='wp-emoji-styles-inline-css'>
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style id='classic-theme-styles-inline-css'>
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em
+      }
+
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none
+      }
+    </style>
+    <style id='global-styles-inline-css'>
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+
+      body .is-layout-flex {
+        display: flex;
+      }
+
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .is-layout-flex> :is(*, div) {
+        margin: 0;
+      }
+
+      body .is-layout-grid {
+        display: grid;
+      }
+
+      .is-layout-grid> :is(*, div) {
+        margin: 0;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+
+      :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel='stylesheet' id='tutor-prism-css-css' href='./css/tutor-pro-assets-lib-codesample-prism.css' media='all' />
+    <link rel='stylesheet' id='tutor-pro-front-css' href='./css/tutor-pro-assets-css-front.css' media='all' />
+    <link rel='stylesheet' id='tutor-icon-css' href='./css/tutor-assets-css-tutor-icon.min.css' media='all' />
+    <link rel='stylesheet' id='tutor-css' href='./css/tutor-assets-css-tutor.min.css' media='all' />
+    <link rel='stylesheet' id='tutor-frontend-css' href='./css/tutor-assets-css-tutor-front.min.css' media='all' />
+    <style id='tutor-frontend-inline-css'>
+      .mce-notification.mce-notification-error {
+        display: none !important;
+      }
+
+      :root {
+        --tutor-color-primary: #3E64DE;
+        --tutor-color-primary-rgb: 62, 100, 222;
+        --tutor-color-primary-hover: #395BCA;
+        --tutor-color-primary-hover-rgb: 57, 91, 202;
+        --tutor-body-color: #212327;
+        --tutor-body-color-rgb: 33, 35, 39;
+        --tutor-border-color: #E3E5EB;
+        --tutor-border-color-rgb: 227, 229, 235;
+        --tutor-color-gray: #CDCFD5;
+        --tutor-color-gray-rgb: 205, 207, 213;
+      }
+    </style>
+    <link rel='stylesheet' id='hello-elementor-css' href='./css/hello-elementor-style.min.css' media='all' />
+    <link rel='stylesheet' id='hello-elementor-theme-style-css' href='./css/hello-elementor-theme.min.css' media='all' />
+    <link rel='stylesheet' id='hello-elementor-header-footer-css' href='./css/hello-elementor-header-footer.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='./css/elementor-assets-css-frontend-lite.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-post-11-css' href='./css/elementor-css-post-11.css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-ekiticons-css' href='./css/elementskit-lite-modules-elementskit-icon-pack-assets-css-ekiticons.css' media='all' />
+    <link rel='stylesheet' id='elementskit-parallax-style-css' href='./css/elementskit-modules-parallax-assets-css-style.css' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='./css/elementor-assets-lib-swiper-v8-css-swiper.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-pro-css' href='./css/elementor-pro-assets-css-frontend-lite.min.css' media='all' />
+    <link rel='stylesheet' id='cotton-css' href='./css/elementskit-modules-mouse-cursor-assets-css-style.css' media='all' />
+    <link rel='stylesheet' id='elementor-global-css' href='./css/elementor-css-global.css' media='all' />
+    <link rel='stylesheet' id='elementor-post-17-css' href='./css/elementor-css-post-17.css' media='all' />
+    <link rel='stylesheet' id='ekit-widget-styles-css' href='./css/elementskit-lite-widgets-init-assets-css-widget-styles.css' media='all' />
+    <link rel='stylesheet' id='ekit-widget-styles-pro-css' href='./css/elementskit-widgets-init-assets-css-widget-styles-pro.css' media='all' />
+    <link rel='stylesheet' id='ekit-responsive-css' href='./css/elementskit-lite-widgets-init-assets-css-responsive.css' media='all' />
+    <link rel='stylesheet' id='font-awesome-4-shim-css' href='./css/tutor-lms-elementor-addons-assets-css-font-awesome.min.css' media='all' />
+    <link rel='stylesheet' id='slick-css-css' href='./css/tutor-lms-elementor-addons-assets-css-slick.min.css' media='all' />
+    <link rel='stylesheet' id='slick-theme-css-css' href='./css/tutor-lms-elementor-addons-assets-css-slick-theme.css' media='all' />
+    <link rel='stylesheet' id='tutor-elementor-css-css' href='./css/tutor-lms-elementor-addons-assets-css-tutor-elementor.min.css' media='all' />
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.6.1' media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <script src="./js/jquery-jquery.min.js" id="jquery-core-js"></script>
+    <script src="./js/jquery-jquery-migrate.min.js" id="jquery-migrate-js"></script>
+    <script src="./js/elementskit-modules-parallax-assets-js-jarallax.js" id="jarallax-js"></script>
+    <script src="./js/tutor-lms-elementor-addons-assets-js-slick.min.js" id="etlms-slick-library-js"></script>
+    <script id="tutor-elementor-js-js-extra">
+      var tutorElementorData = {
+        "is_sidebar_sticky": ""
+      };
+    </script>
+    <script id="tutor-elementor-js-js-before">
+      const etlmsUtility = {
+        "is_editor_mode": false
+      }
+    </script>
+    <script src="./js/tutor-lms-elementor-addons-assets-js-tutor-elementor.js" id="tutor-elementor-js-js"></script>
+
+      <meta name="generator" content="Elementor 3.23.4; features: e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading, e_lazyload, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+
+    <style>
+      .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+
+      @media screen and (max-height: 1024px) {
+
+        .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+          background-image: none !important;
+        }
+      }
+
+      @media screen and (max-height: 640px) {
+
+        .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+          background-image: none !important;
+        }
+      }
+    </style>
+    <style id="wp-custom-css">
+      .elementor-52 .elementor-element.elementor-element-1f1f9ea .elementor-field-group {
+        margin-top: 50px;
+      }
+
+      .elementor-element-1f1f9ea .elementor-field-label {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+
+      .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group .elementor-field-subgroup,
+      .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group>.elementor-select-wrapper,
+      .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group>input,
+      .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group>textarea {
+        text-align: center !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  </head>
+  <body class="home page-template page-template-elementor_canvas page page-id-17 tutor-lms elementor-default elementor-template-canvas elementor-kit-11 elementor-page elementor-page-17">
+    <div data-elementor-type="wp-page" data-elementor-id="17" class="elementor elementor-17" data-elementor-post-type="page">
+      <section class="elementor-section elementor-top-section elementor-element elementor-element-790e373 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="790e373" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-483ddc2" data-id="483ddc2" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-389a3ab elementor-widget elementor-widget-spacer" data-id="389a3ab" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="spacer.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor - v3.23.0 - 05-08-2024 */
+                    .elementor-column .elementor-spacer-inner {
+                      height: var(--spacer-size)
+                    }
+
+                    .e-con {
+                      --container-widget-width: 100%
+                    }
+
+                    .e-con-inner>.elementor-widget-spacer,
+                    .e-con>.elementor-widget-spacer {
+                      width: var(--container-widget-width, var(--spacer-size));
+                      --align-self: var(--container-widget-align-self, initial);
+                      --flex-shrink: 0
+                    }
+
+                    .e-con-inner>.elementor-widget-spacer>.elementor-widget-container,
+                    .e-con>.elementor-widget-spacer>.elementor-widget-container {
+                      height: 100%;
+                      width: 100%
+                    }
+
+                    .e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,
+                    .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer {
+                      height: 100%
+                    }
+
+                    .e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,
+                    .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+                      height: var(--container-widget-height, var(--spacer-size))
+                    }
+
+                    .e-con-inner>.elementor-widget-spacer.elementor-widget-empty,
+                    .e-con>.elementor-widget-spacer.elementor-widget-empty {
+                      position: relative;
+                      min-height: 22px;
+                      min-width: 22px
+                    }
+
+                    .e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,
+                    .e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon {
+                      position: absolute;
+                      top: 0;
+                      bottom: 0;
+                      left: 0;
+                      right: 0;
+                      margin: auto;
+                      padding: 0;
+                      width: 22px;
+                      height: 22px
+                    }
+                  </style>
+                  <div class="elementor-spacer">
+                    <div class="elementor-spacer-inner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-720e1fb" data-id="720e1fb" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-1163805 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="1163805" data-element_type="widget" data-settings="{&quot;button_width&quot;:&quot;30&quot;,&quot;step_next_label&quot;:&quot;SEND TOTP&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="form.default">
+                <div class="elementor-widget-container">
+                  <style>
+                    /*! elementor-pro - v3.23.0 - 05-08-2024 */
+                    .elementor-button.elementor-hidden,
+                    .elementor-hidden {
+                      display: none
+                    }
+
+                    .e-form__step {
+                      width: 100%
+                    }
+
+                    .e-form__step:not(.elementor-hidden) {
+                      display: flex;
+                      flex-wrap: wrap
+                    }
+
+                    .e-form__buttons {
+                      flex-wrap: wrap
+                    }
+
+                    .e-form__buttons,
+                    .e-form__buttons__wrapper {
+                      display: flex
+                    }
+
+                    .e-form__indicators {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      flex-wrap: nowrap;
+                      font-size: 13px;
+                      margin-bottom: var(--e-form-steps-indicators-spacing)
+                    }
+
+                    .e-form__indicators__indicator {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      flex-basis: 0;
+                      padding: 0 var(--e-form-steps-divider-gap)
+                    }
+
+                    .e-form__indicators__indicator__progress {
+                      width: 100%;
+                      position: relative;
+                      background-color: var(--e-form-steps-indicator-progress-background-color);
+                      border-radius: var(--e-form-steps-indicator-progress-border-radius);
+                      overflow: hidden
+                    }
+
+                    .e-form__indicators__indicator__progress__meter {
+                      width: var(--e-form-steps-indicator-progress-meter-width, 0);
+                      height: var(--e-form-steps-indicator-progress-height);
+                      line-height: var(--e-form-steps-indicator-progress-height);
+                      padding-right: 15px;
+                      border-radius: var(--e-form-steps-indicator-progress-border-radius);
+                      background-color: var(--e-form-steps-indicator-progress-color);
+                      color: var(--e-form-steps-indicator-progress-meter-color);
+                      text-align: right;
+                      transition: width .1s linear
+                    }
+
+                    .e-form__indicators__indicator:first-child {
+                      padding-left: 0
+                    }
+
+                    .e-form__indicators__indicator:last-child {
+                      padding-right: 0
+                    }
+
+                    .e-form__indicators__indicator--state-inactive {
+                      color: var(--e-form-steps-indicator-inactive-primary-color, #c2cbd2)
+                    }
+
+                    .e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none) {
+                      background-color: var(--e-form-steps-indicator-inactive-secondary-color, #fff)
+                    }
+
+                    .e-form__indicators__indicator--state-inactive object,
+                    .e-form__indicators__indicator--state-inactive svg {
+                      fill: var(--e-form-steps-indicator-inactive-primary-color, #c2cbd2)
+                    }
+
+                    .e-form__indicators__indicator--state-active {
+                      color: var(--e-form-steps-indicator-active-primary-color, #39b54a);
+                      border-color: var(--e-form-steps-indicator-active-secondary-color, #fff)
+                    }
+
+                    .e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none) {
+                      background-color: var(--e-form-steps-indicator-active-secondary-color, #fff)
+                    }
+
+                    .e-form__indicators__indicator--state-active object,
+                    .e-form__indicators__indicator--state-active svg {
+                      fill: var(--e-form-steps-indicator-active-primary-color, #39b54a)
+                    }
+
+                    .e-form__indicators__indicator--state-completed {
+                      color: var(--e-form-steps-indicator-completed-secondary-color, #fff)
+                    }
+
+                    .e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none) {
+                      background-color: var(--e-form-steps-indicator-completed-primary-color, #39b54a)
+                    }
+
+                    .e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label {
+                      color: var(--e-form-steps-indicator-completed-primary-color, #39b54a)
+                    }
+
+                    .e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none {
+                      color: var(--e-form-steps-indicator-completed-primary-color, #39b54a);
+                      background-color: initial
+                    }
+
+                    .e-form__indicators__indicator--state-completed object,
+                    .e-form__indicators__indicator--state-completed svg {
+                      fill: var(--e-form-steps-indicator-completed-secondary-color, #fff)
+                    }
+
+                    .e-form__indicators__indicator__icon {
+                      width: var(--e-form-steps-indicator-padding, 30px);
+                      height: var(--e-form-steps-indicator-padding, 30px);
+                      font-size: var(--e-form-steps-indicator-icon-size);
+                      border-width: 1px;
+                      border-style: solid;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      overflow: hidden;
+                      margin-bottom: 10px
+                    }
+
+                    .e-form__indicators__indicator__icon img,
+                    .e-form__indicators__indicator__icon object,
+                    .e-form__indicators__indicator__icon svg {
+                      width: var(--e-form-steps-indicator-icon-size);
+                      height: auto
+                    }
+
+                    .e-form__indicators__indicator__icon .e-font-icon-svg {
+                      height: 1em
+                    }
+
+                    .e-form__indicators__indicator__number {
+                      width: var(--e-form-steps-indicator-padding, 30px);
+                      height: var(--e-form-steps-indicator-padding, 30px);
+                      border-width: 1px;
+                      border-style: solid;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin-bottom: 10px
+                    }
+
+                    .e-form__indicators__indicator--shape-circle {
+                      border-radius: 50%
+                    }
+
+                    .e-form__indicators__indicator--shape-square {
+                      border-radius: 0
+                    }
+
+                    .e-form__indicators__indicator--shape-rounded {
+                      border-radius: 5px
+                    }
+
+                    .e-form__indicators__indicator--shape-none {
+                      border: 0
+                    }
+
+                    .e-form__indicators__indicator__label {
+                      text-align: center
+                    }
+
+                    .e-form__indicators__indicator__separator {
+                      width: 100%;
+                      height: var(--e-form-steps-divider-width);
+                      background-color: #babfc5
+                    }
+
+                    .e-form__indicators--type-icon,
+                    .e-form__indicators--type-icon_text,
+                    .e-form__indicators--type-number,
+                    .e-form__indicators--type-number_text {
+                      align-items: flex-start
+                    }
+
+                    .e-form__indicators--type-icon .e-form__indicators__indicator__separator,
+                    .e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,
+                    .e-form__indicators--type-number .e-form__indicators__indicator__separator,
+                    .e-form__indicators--type-number_text .e-form__indicators__indicator__separator {
+                      margin-top: calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)
+                    }
+
+                    .elementor-field-type-hidden {
+                      display: none
+                    }
+
+                    .elementor-field-type-html {
+                      display: inline-block
+                    }
+
+                    .elementor-field-type-tel input {
+                      direction: inherit
+                    }
+
+                    .elementor-login .elementor-lost-password,
+                    .elementor-login .elementor-remember-me {
+                      font-size: .85em
+                    }
+
+                    .elementor-field-type-recaptcha_v3 .elementor-field-label {
+                      display: none
+                    }
+
+                    .elementor-field-type-recaptcha_v3 .grecaptcha-badge {
+                      z-index: 1
+                    }
+
+                    .elementor-button .elementor-form-spinner {
+                      order: 3
+                    }
+
+                    .elementor-form .elementor-button .elementor-button-content-wrapper {
+                      align-items: center
+                    }
+
+                    .elementor-form .elementor-button .elementor-button-text {
+                      white-space: normal
+                    }
+
+                    .elementor-form .elementor-button svg {
+                      height: auto
+                    }
+
+                    .elementor-form .elementor-button .e-font-icon-svg {
+                      height: 1em
+                    }
+
+                    .elementor-form .elementor-button .elementor-button-content-wrapper {
+                      gap: 5px
+                    }
+
+                    .elementor-form .elementor-button .elementor-button-icon,
+                    .elementor-form .elementor-button .elementor-button-text {
+                      flex-grow: unset;
+                      order: unset
+                    }
+
+                    .elementor-select-wrapper .select-caret-down-wrapper {
+                      position: absolute;
+                      top: 50%;
+                      transform: translateY(-50%);
+                      inset-inline-end: 10px;
+                      pointer-events: none;
+                      font-size: 11px
+                    }
+
+                    .elementor-select-wrapper .select-caret-down-wrapper svg {
+                      display: unset;
+                      width: 1em;
+                      aspect-ratio: unset;
+                      fill: currentColor
+                    }
+
+                    .elementor-select-wrapper .select-caret-down-wrapper i {
+                      font-size: 19px;
+                      line-height: 2
+                    }
+
+                    .elementor-select-wrapper.remove-before:before {
+                      content: "" !important
+                    }
+
+                    .elementor-message-svg:before {
+                      content: "";
+                      width: 1em;
+                      height: 1em;
+                      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00Ljc1IDguMTVMMS42IDUgLjU1IDYuMDVsNC4yIDQuMiA5LTlMMTIuNy4yIDQuNzUgOC4xNXoiIGZpbGw9IiMwMDhBMjAiLz48L3N2Zz4=");
+                      background-position: 50%;
+                      background-repeat: no-repeat
+                    }
+                  </style>
+<form class="elementor-form" method="post" name="New Form" onsubmit="return redirectToAssessment()">
+    <input type="hidden" name="post_id" value="17">
+    <input type="hidden" name="form_id" value="1163805">
+    <input type="hidden" name="referer_title" value="">
+    <input type="hidden" name="queried_id" value="17">
+    <div class="elementor-form-fields-wrapper elementor-labels-above">
+
+        <!-- Username Field -->
+        <div id="username-field" class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+            <label for="form-field-name" class="elementor-field-label">Admin Username</label>
+            <input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Username">
+        </div>
+
+        <!-- Password Field -->
+        <div id="password-field" class="elementor-field-type-password elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
+            <label for="form-field-email" class="elementor-field-label">Admin Password</label>
+            <input size="1" type="password" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Password" required="required" aria-required="true">
+        </div>
+
+        <!-- SEND TOTP Button -->
+        <div id="send-totp-button" class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-30 e-form__buttons">
+            <button class="elementor-button elementor-size-sm" type="button" onclick="showTOTP()">
+                <span class="elementor-button-content-wrapper"><span class="elementor-button-text">SEND TOTP</span></span>
+            </button>
+        </div>
+
+        <!-- TOTP Field (Hidden by default) -->
+        <div id="totp-field" class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_4bb52d1 elementor-col-100 elementor-field-required" style="display:none;">
+            <label for="form-field-field_4bb52d1" class="elementor-field-label">TOTP</label>
+            <input size="1" type="text" name="form_fields[field_4bb52d1]" id="form-field-field_4bb52d1" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="123456" required="required" aria-required="true">
+        </div>
+        
+                <!-- Expandable Section -->
+<div class="elementor-field-type-html elementor-field-group elementor-column elementor-col-100">
+    <button id="toggle-mfa-info" style="display:none;" class="elementor-button elementor-size-sm" type="button" onclick="toggleMFAInfo()">
+        Why do I need to do this?
+    </button>
+
+    <div id="mfa-info" style="display:none; margin-top: 10px;">
+        <ul>
+            <li><strong>Increases security:</strong> MFA adds an extra layer of protection by requiring multiple verification methods, making it harder for attackers to breach accounts.</li>
+            <li><strong>Prevents phishing:</strong> Even if a password is stolen through phishing, MFA ensures that additional authentication is needed, blocking unauthorized access.</li>
+            <li><strong>Supports compliance:</strong> MFA helps organizations meet regulatory requirements and protect sensitive data, reducing the risk of security breaches.</li>
+        </ul>
+    </div>
+</div>
+
+        <!-- LOGIN Button -->
+
+        <!-- LOGIN Button -->
+        <div id="login-button" class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-30 e-form__buttons" style="display:none; width:45%;">
+            <button class="elementor-button elementor-size-sm" type="submit">
+                <span class="elementor-button-content-wrapper"><span class="elementor-button-text">LOGIN AS ADMIN</span></span>
+            </button>
+        </div>
+
+    </div>
+</form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type='text/javascript'>
+      const lazyloadRunObserver = () => {
+        const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+        const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              let lazyloadBackground = entry.target;
+              if (lazyloadBackground) {
+                lazyloadBackground.classList.add('e-lazyloaded');
+              }
+              lazyloadBackgroundObserver.unobserve(entry.target);
+            }
+          });
+        }, {
+          rootMargin: '200px 0px 200px 0px'
+        });
+        lazyloadBackgrounds.forEach((lazyloadBackground) => {
+          lazyloadBackgroundObserver.observe(lazyloadBackground);
+        });
+      };
+      const events = ['DOMContentLoaded', 'elementor/lazyload/observe', ];
+      events.forEach((event) => {
+        document.addEventListener(event, lazyloadRunObserver);
+      });
+    </script>
+    <link rel='stylesheet' id='elementskit-reset-button-for-pro-form-css-css' href='./css/elementskit-modules-pro-form-reset-button-assets-css-elementskit-reset-button.css' media='all' />
+    <link rel='stylesheet' id='ekit-particles-css' href='./css/elementskit-modules-particles-assets-css-particles.css' media='all' />
+    <script src="./js/tutor-pro-assets-lib-prism-prism.min.js" id="tutor-prism-js-js"></script>
+    <script src="./js/tutor-pro-assets-lib-prism-script.js" id="tutor-prism-script-js"></script>
+    <script src="./js/dist-hooks.min.js" id="wp-hooks-js"></script>
+    <script src="./js/dist-i18n.min.js" id="wp-i18n-js"></script>
+    <script id="wp-i18n-js-after">
+      wp.i18n.setLocaleData({
+        'text direction\u0004ltr': ['ltr']
+      });
+    </script>
+    <script src="./js/tutor-pro-assets-js-front.js" id="tutor-pro-front-js"></script>
+
+    <script src="./js/tutor-assets-js-tutor.min.js" id="tutor-script-js"></script>
+    <script id="quicktags-js-extra">
+      var quicktagsL10n = {
+        "closeAllOpenTags": "Close all open tags",
+        "closeTags": "close tags",
+        "enterURL": "Enter the URL",
+        "enterImageURL": "Enter the URL of the image",
+        "enterImageDescription": "Enter a description of the image",
+        "textdirection": "text direction",
+        "toggleTextdirection": "Toggle Editor Text Direction",
+        "dfw": "Distraction-free writing mode",
+        "strong": "Bold",
+        "strongClose": "Close bold tag",
+        "em": "Italic",
+        "emClose": "Close italic tag",
+        "link": "Insert link",
+        "blockquote": "Blockquote",
+        "blockquoteClose": "Close blockquote tag",
+        "del": "Deleted text (strikethrough)",
+        "delClose": "Close deleted text tag",
+        "ins": "Inserted text",
+        "insClose": "Close inserted text tag",
+        "image": "Insert image",
+        "ul": "Bulleted list",
+        "ulClose": "Close bulleted list tag",
+        "ol": "Numbered list",
+        "olClose": "Close numbered list tag",
+        "li": "List item",
+        "liClose": "Close list item tag",
+        "code": "Code",
+        "codeClose": "Close code tag",
+        "more": "Insert Read More tag"
+      };
+    </script>
+    <script src="./js/yzi-quicktags.min.js" id="quicktags-js"></script>
+    <script src="./js/jquery-ui-core.min.js" id="jquery-ui-core-js"></script>
+    <script src="./js/jquery-ui-mouse.min.js" id="jquery-ui-mouse-js"></script>
+    <script src="./js/jquery-ui-sortable.min.js" id="jquery-ui-sortable-js"></script>
+    <script src="./js/jquery-jquery.ui.touch-punch.js" id="jquery-touch-punch-js"></script>
+    <script src="./js/tutor-assets-packages-SocialShare-SocialShare.min.js" id="tutor-social-share-js"></script>
+
+    <script src="./js/tutor-assets-js-tutor-front.min.js" id="tutor-frontend-js"></script>
+    <script src="./js/jquery-ui-datepicker.min.js" id="jquery-ui-datepicker-js"></script>
+    <script id="jquery-ui-datepicker-js-after">
+      jQuery(function(jQuery) {
+        jQuery.datepicker.setDefaults({
+          "closeText": "Close",
+          "currentText": "Today",
+          "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+          "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          "nextText": "Next",
+          "prevText": "Previous",
+          "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+          "dateFormat": "MM d, yy",
+          "firstDay": 1,
+          "isRTL": false
+        });
+      });
+    </script>
+    <script src="./js/hello-elementor-assets-js-hello-frontend.min.js" id="hello-theme-frontend-js"></script>
+    <script src="./js/elementskit-lite-libs-framework-assets-js-frontend-script.js" id="elementskit-framework-js-frontend-js"></script>
+
+    <script src="./js/elementskit-lite-widgets-init-assets-js-widget-scripts.js" id="ekit-widget-scripts-js"></script>
+    <script src="./js/elementskit-modules-parallax-assets-js-anime.js" id="animejs-js"></script>
+    <script defer src="./js/elementskit-modules-parallax-assets-js-parallax-frontend.js" id="elementskit-parallax-frontend-defer-js"></script>
+    <script src="./js/elementor-pro-assets-js-webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+    <script src="./js/elementor-assets-js-webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+    <script src="./js/elementor-assets-js-frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+    <script id="elementor-pro-frontend-js-before">
+      var ElementorProFrontendConfig = {
+        "ajaxurl": "./wp-admin\/admin-ajax.php",
+        "nonce": "0247fdfb84",
+        "urls": {
+          "assets": "./wp-content\/plugins\/elementor-pro\/assets\/",
+          "rest": "./wp-json\/"
+        },
+        "shareButtonsNetworks": {
+          "facebook": {
+            "title": "Facebook",
+            "has_counter": true
+          },
+          "twitter": {
+            "title": "Twitter"
+          },
+          "linkedin": {
+            "title": "LinkedIn",
+            "has_counter": true
+          },
+          "pinterest": {
+            "title": "Pinterest",
+            "has_counter": true
+          },
+          "reddit": {
+            "title": "Reddit",
+            "has_counter": true
+          },
+          "vk": {
+            "title": "VK",
+            "has_counter": true
+          },
+          "odnoklassniki": {
+            "title": "OK",
+            "has_counter": true
+          },
+          "tumblr": {
+            "title": "Tumblr"
+          },
+          "digg": {
+            "title": "Digg"
+          },
+          "skype": {
+            "title": "Skype"
+          },
+          "stumbleupon": {
+            "title": "StumbleUpon",
+            "has_counter": true
+          },
+          "mix": {
+            "title": "Mix"
+          },
+          "telegram": {
+            "title": "Telegram"
+          },
+          "pocket": {
+            "title": "Pocket",
+            "has_counter": true
+          },
+          "xing": {
+            "title": "XING",
+            "has_counter": true
+          },
+          "whatsapp": {
+            "title": "WhatsApp"
+          },
+          "email": {
+            "title": "Email"
+          },
+          "print": {
+            "title": "Print"
+          },
+          "x-twitter": {
+            "title": "X"
+          },
+          "threads": {
+            "title": "Threads"
+          }
+        },
+        "facebook_sdk": {
+          "lang": "en_US",
+          "app_id": ""
+        },
+        "lottie": {
+          "defaultAnimationUrl": "./wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+        }
+      };
+    </script>
+    <script src="./js/elementor-pro-assets-js-frontend.min.js" id="elementor-pro-frontend-js"></script>
+    <script src="./js/elementor-assets-lib-waypoints-waypoints.min.js" id="elementor-waypoints-js"></script>
+
+    <script src="./js/elementor-assets-js-frontend.min.js" id="elementor-frontend-js"></script>
+    <script src="./js/elementor-pro-assets-js-elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+    <script src="./js/elementskit-lite-widgets-init-assets-js-animate-circle.min.js" id="animate-circle-js"></script>
+    <script id="elementskit-elementor-js-extra">
+      var ekit_config = {
+        "ajaxurl": "./wp-admin\/admin-ajax.php",
+        "nonce": "30c26c6a49"
+      };
+    </script>
+    <script src="./js/elementskit-lite-widgets-init-assets-js-elementor.js" id="elementskit-elementor-js"></script>
+    <script src="./js/elementskit-widgets-init-assets-js-elementor.js" id="elementskit-elementor-pro-js"></script>
+    <script defer src="./js/elementskit-modules-sticky-content-assets-js-elementskit-sticky-content.js" id="elementskit-sticky-content-script-init-defer-js"></script>
+    <script src="./js/elementskit-modules-pro-form-reset-button-assets-js-elementskit-reset-button.js" id="elementskit-reset-button-js"></script>
+    <script src="./js/elementskit-modules-particles-assets-js-particles.min.js" id="particles-js"></script>
+    <script src="./js/elementskit-modules-particles-assets-js-ekit-particles.js" id="ekit-particles-js"></script>
+    <script defer src="./js/elementskit-modules-parallax-assets-js-parallax-admin.js" id="elementskit-parallax-admin-defer-js"></script>
+    <script src="./js/elementskit-modules-wrapper-link-assets-js-wrapper.js" id="elementskit-wrapper-js"></script>
+    <script src="./js/elementskit-modules-mouse-cursor-assets-js-cotton.min.js" id="cotton-js"></script>
+    <script src="./js/elementskit-modules-mouse-cursor-assets-js-mouse-cursor-scripts.js" id="mouse-cursor-js"></script>
+  </body>
+  <script>
+	function showTOTP() {
+		// Hide the Username, Password fields, and SEND TOTP button
+		document.getElementById('username-field').style.display = 'none';
+		document.getElementById('password-field').style.display = 'none';
+		document.getElementById('send-totp-button').style.display = 'none';
+	
+		// Show the TOTP input field and the LOGIN button
+		document.getElementById('totp-field').style.display = 'block';
+		document.getElementById('login-button').style.display = 'block';
+		document.getElementById('toggle-mfa-info').style.display = 'block';
+	}
+	
+	function redirectToAssessment() {
+		window.location.href = 'dashboard-admin.html';
+		return false; 
+	}
+
+function toggleMFAInfo() {
+    // Toggle the visibility of the MFA info section
+    const mfaInfo = document.getElementById('mfa-info');
+    mfaInfo.style.display = mfaInfo.style.display === 'none' ? 'block' : 'none';
+}
+</script>
